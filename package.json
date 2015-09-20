@@ -1,22 +1,29 @@
 {
-    "name" : "nodejs-gravatar",
-    "description" : "Node module to consume images and profiles from gravatar",
-    "keywords" : [ "gravatar", "avatar" ],
-    "version" : "1.0.2",
-    "author" : "Andrew Jutton <ajutton@gmail.com>",
-    "repository" : { "type": "git",
-        "url": "git@github.com:AndrewJutton/nodejs-gravatar.git" },
-    "main": "index.js",
-    "dependencies": {
-        "crypto": "0.0.3",
-        "querystring": "0.2.0"
-    },
-    "devDependencies": {
-        "should": "1.2.2",
-        "jasmine-node": "1.11.0"
-    },
-    "optionalDependencies": {},
-    "engines": {
-        "node": "*"
-    }
+  "name": "gravatar-img",
+  "description": "Node module to consume images and profiles from gravatar",
+  "keywords": [
+    "gravatar",
+    "avatar",
+    "react",
+    "react-native"
+  ],
+  "version": "1.0.3",
+  "author": "Layton Whiteley <layton.whiteley@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lwhiteley/nodejs-gravatar.git"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "crypto-js": "^3.1.5",
+    "querystring": "0.2.0"
+  },
+  "devDependencies": {
+    "should": "1.2.2",
+    "jasmine-node": "1.11.0"
+  },
+  "optionalDependencies": {},
+  "engines": {
+    "node": "*"
+  }
 }
