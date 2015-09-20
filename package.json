@@ -1,13 +1,13 @@
 {
-  "name": "gravatar-img",
-  "description": "Node module to consume images and profiles from gravatar",
+  "name": "gravatar-api",
+  "version": "1.1.6",
+  "description": "Node module to build images and profile urls for gravatar",
   "keywords": [
     "gravatar",
     "avatar",
     "react",
     "react-native"
   ],
-  "version": "1.0.3",
   "author": "Layton Whiteley <layton.whiteley@gmail.com>",
   "repository": {
     "type": "git",
@@ -15,14 +15,15 @@
   },
   "main": "index.js",
   "dependencies": {
-    "crypto-js": "^3.1.5",
+    "lodash": "^3.10.1",
+    "nodetools": "^1.0.0",
     "querystring": "0.2.0"
   },
   "devDependencies": {
     "should": "1.2.2",
     "jasmine-node": "1.11.0"
   },
-  "optionalDependencies": {},
+  "license": "MIT",
   "engines": {
     "node": "*"
   }
