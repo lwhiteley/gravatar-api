@@ -1,5 +1,6 @@
 .travis.yml
 test
+tests
 tmp
 .gitignore
 .idea

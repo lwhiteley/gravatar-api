@@ -1,7 +1,10 @@
 gravatar-api
 ===============
 
-Node module to consume image and profiles from gravatar.
+[![Build Status](https://travis-ci.org/lwhiteley/nodejs-gravatar.svg?branch=master)](https://travis-ci.org/lwhiteley/nodejs-gravatar)
+[![Dependencies](https://david-dm.org/lwhiteley/nodejs-gravatar.svg)](https://david-dm.org/lwhiteley/nodejs-gravatar)
+
+Node module to build image and profile urls for gravatar.
 
 gravatar-api makes it easy to build gravatar image and profile urls.
 
@@ -27,7 +30,7 @@ var gravatar = require('gravatar-api');
 var options = {
     email: 'test@gmail.com'
 }
-user.avatar = gravatar.imageUrl(options);
+var avatar = gravatar.imageUrl(options);
 ```
 
 
@@ -39,7 +42,7 @@ var options = {
     email: 'test@gmail.com',
     parameters: { "size": "200" }
 }
-user.avatar = gravatar.imageUrl(options);
+var avatar = gravatar.imageUrl(options);
 ```
 
 A valid size is between 1 - 2048.
@@ -48,7 +51,7 @@ For more options, see [gravatar documentation](https://en.gravatar.com/site/impl
 
 ### Secure Endpoint
 
-You can specify retrieving the secure version of the URL by passing a third `BOOLEAN` parameter 
+You can specify retrieving the secure version of the URL by setting the `secure` property to `true`  
 
 #### Example
 ```javascript
@@ -57,7 +60,7 @@ var options = {
     parameters: { "size": "200", "d": "mm" },
     secure: true 
 }
-user.avatar = gravatar.imageUrl(options);
+var avatar = gravatar.imageUrl(options);
 ```
 
 ### Gravatar Profile URLs
@@ -71,7 +74,8 @@ for each type.
 ```javascript
 var options = {
     email: 'test@gmail.com',
-    type: 'json', // Defailt: json, Available Types: 'json', 'xml', 'qr', 'php', 'vcf'
+    type: 'json', // Defailt: json, 
+                 // Available Types: 'json', 'xml', 'qr', 'php', 'vcf'
     parameters: {'callback': 'doSomething' }, //optional
     secure: true
 }
