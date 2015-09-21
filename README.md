@@ -74,8 +74,8 @@ for each type.
 ```javascript
 var options = {
     email: 'test@gmail.com',
-    type: 'json', // Defailt: json, 
-                 // Available Types: 'json', 'xml', 'qr', 'php', 'vcf'
+    type: 'json', // Default: json, 
+                  // Available Types: 'json', 'xml', 'qr', 'php', 'vcf'
     parameters: {'callback': 'doSomething' }, //optional
     secure: true
 }
