@@ -1,6 +1,6 @@
 var querystring = require('querystring');
 var _ = require('lodash');
-var crypto = require('crypto-js/md5');
+var crypto = require('blueimp-md5');
 
 var self = {},
     defaultEmail = 'no@email.com';
