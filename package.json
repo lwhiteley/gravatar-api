@@ -23,7 +23,7 @@
     "querystring": "0.2.0"
   },
   "devDependencies": {
-    "tap": "^1.4.1"
+    "tap": "^5.7.0"
   },
   "license": "MIT",
   "engines": {
