@@ -40,7 +40,7 @@ self.getProfileUrl = function(options){
     options = sanitize(options);
     var baseUrl = getBaseUrl(options.secure);
     var validTypes = ['json', 'xml', 'qr', 'php', 'vcf'];
-    if(!_.contains(validTypes, options.type)){
+    if(!_.includes(validTypes, options.type)){
         options.type = 'json';
     }
     var result = getQueryString(options.parameters);
