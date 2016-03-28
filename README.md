@@ -1,8 +1,8 @@
 gravatar-api
 ===============
 
-[![Build Status](https://travis-ci.org/lwhiteley/nodejs-gravatar.svg?branch=master)](https://travis-ci.org/lwhiteley/nodejs-gravatar)
-[![Dependencies](https://david-dm.org/lwhiteley/nodejs-gravatar.svg)](https://david-dm.org/lwhiteley/nodejs-gravatar)
+[![Build Status](https://travis-ci.org/lwhiteley/gravatar-api.svg?branch=master)](https://travis-ci.org/lwhiteley/gravatar-api)
+[![Dependencies](https://david-dm.org/lwhiteley/gravatar-api.svg)](https://david-dm.org/lwhiteley/gravatar-api)
 
 Node module to build image and profile urls for gravatar.
 
@@ -58,7 +58,7 @@ You can specify retrieving the secure version of the URL by setting the `secure`
 var options = {
     email: 'test@gmail.com',
     parameters: { "size": "200", "d": "mm" },
-    secure: true 
+    secure: true
 }
 var avatar = gravatar.imageUrl(options);
 ```
@@ -74,7 +74,7 @@ for each type.
 ```javascript
 var options = {
     email: 'test@gmail.com',
-    type: 'json', // Default: json, 
+    type: 'json', // Default: json,
                   // Available Types: 'json', 'xml', 'qr', 'php', 'vcf'
     parameters: {'callback': 'doSomething' }, //optional
     secure: true

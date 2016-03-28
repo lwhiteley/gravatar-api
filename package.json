@@ -1,6 +1,6 @@
 {
   "name": "gravatar-api",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "description": "module to build image and profile urls for gravatar",
   "keywords": [
     "gravatar",
