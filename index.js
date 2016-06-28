@@ -3,7 +3,7 @@ var _ = require('lodash');
 var crypto = require('blueimp-md5');
 
 var self = {},
-    defaultEmail = 'no@email.com';
+    defaultEmail = '';
 
 var getQueryString = function (parameters) {
     var result = '';
