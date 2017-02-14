@@ -1,5 +1,8 @@
 var querystring = require('querystring');
-var _ = require('lodash');
+var _ = {
+    includes: require('lodash/includes'),
+    trim: require('lodash/trim')
+};
 var crypto = require('blueimp-md5');
 
 var self = {},
